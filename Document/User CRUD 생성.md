@@ -2,6 +2,8 @@
 
 __2020.03.18__
 
+파일 구조는 https://www.javaguides.net/2019/01/standard-project-structure-for-spring-boot-projects.html 참고함
+
 - Directory Structure
 
   ![image](https://user-images.githubusercontent.com/59730002/76870476-176ef500-68ad-11ea-8198-56a6ff89b8a3.png)
