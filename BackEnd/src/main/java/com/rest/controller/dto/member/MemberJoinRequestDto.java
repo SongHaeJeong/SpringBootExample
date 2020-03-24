@@ -16,13 +16,9 @@ import lombok.Setter;
 @Setter
 public class MemberJoinRequestDto {
 
-    @NotEmpty
     private String email;
-    @NotEmpty
     private String password;
-    @NotEmpty
     private String name;
-    @NotNull
     private MemberRole role;
 
     @Builder

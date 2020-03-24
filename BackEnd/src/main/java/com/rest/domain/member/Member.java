@@ -43,4 +43,9 @@ public class Member {
 		this.role = role;
 	}
 	
+	// 패스워드를 암호화하는 메서드 
+	public void encodingPassword(String password) {
+		this.password = password;
+	}
+	
 }
