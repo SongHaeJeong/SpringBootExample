@@ -42,6 +42,9 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
+//    	System.out.println(clientId);
+//    	System.out.println(clientSecret);
+//    	System.out.println(jwtKey);
         clients.inMemory()
                 .withClient(clientId)
                 .authorizedGrantTypes("password", "refresh_token")

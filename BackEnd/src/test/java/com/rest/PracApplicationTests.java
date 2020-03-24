@@ -38,21 +38,21 @@ class PracApplicationTests {
 
 	@Test
 	void getJwtToken() throws Exception {
-		String password = "qwe112323";
-		String email = "email12@gmail.com";
+		String password = "qwe112323123";
+		String email = "email12123@gmail.com";
 		MemberJoinRequestDto joinDto = MemberJoinRequestDto.builder().email(email).password(password).name("John")
 				.role(MemberRole.USER).build();
 		memberService.save(joinDto);
 
 		// when & then
-		
-//	this.mockMvc.perform(post("/oauth/token")
-//			.with(httpBasic(clientId, clientSecret))
-//			.param("username",email)
-//			.param("password", password)
-//			.param("grant_tpye", "password")
-//			).andDo(print());
-		
+			
+//		this.mockMvc.perform(post("/oauth/token")
+//				.with(HttpBasic(clientId, clientSecret))
+//				.param("username",email)
+//				.param("password", password)
+//				.param("grant_tpye", "password")
+//				).andDo(print());
+//		
 		
 		
 	}

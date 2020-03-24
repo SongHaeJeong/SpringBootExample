@@ -17,21 +17,21 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @Component
 
-public class AppRunner  {
+public class AppRunner  implements ApplicationRunner{
 
 	
-//    private final MemberService memberService;
-//    
-//
-//    @Override
-//    public void run(ApplicationArguments args) throws Exception {
-//    	MemberJoinRequestDto dto = MemberJoinRequestDto.builder()
-//    			.email("cjsong@naver.com")
-//    			.password("1234")
-//    			.role(MemberRole.USER)
-//    			.name("정송해")
-//    			.build();
-//    	memberService.save(dto);    			
-//       
-//    }
+    private final MemberService memberService;
+    
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+    	MemberJoinRequestDto dto = MemberJoinRequestDto.builder()
+    			.email("cjsong1234@naver.com")
+    			.password("1234")
+    			.role(MemberRole.USER)
+    			.name("정송해")
+    			.build();
+    	memberService.save(dto);    			
+       
+    }
 }
