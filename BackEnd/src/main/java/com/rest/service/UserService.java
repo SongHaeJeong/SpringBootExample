@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.rest.domain.User;
 import com.rest.exception.ResourceNotFoundException;
-import com.rest.model.User;
 import com.rest.repository.UserRepository;
 
 @Service

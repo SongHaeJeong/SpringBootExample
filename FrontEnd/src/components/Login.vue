@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import firebase from 'firebase'
+
 
 
 export default {
@@ -22,16 +22,7 @@ export default {
     },
     methods :{
         login(){
-            firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
-                function(user) {                    
-                    alert("로그인 완료" +user)
-                    console.log(this)
-                },
-                function(err) {
-                    alert('에러 : ' + err.message)
-                }
-            );
-            
+            this.$router.replace('/');
         }
     }    
 }
