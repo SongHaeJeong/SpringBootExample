@@ -1,7 +1,7 @@
 ## SpringBoot 
 
 ### Stack
-- Spring Boot
+- Spring Boot(JAVA)
 - JPA
 - MySQL
 - Vue.js
